@@ -23,7 +23,6 @@ const timer = {
     clearInterval(intervalId);
   },
 };
-timer.start();
 
 function updateClockFace(time) {
   const days = pad(Math.floor(time / (1000 * 60 * 60 * 24)));
@@ -44,3 +43,5 @@ function updateClockFace(time) {
 function pad(value) {
   return String(value).padStart(2, "0");
 }
+
+timer.start();
